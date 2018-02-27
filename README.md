@@ -5,7 +5,11 @@
 	  browser-sync:
 		  watch html, js, css files & automatically reload the browser
 		  
-
+#To Run
+	
+	npm install
+	npm start
+	
 #Grid lines
 	
 	The vertical and horizontal lines that divide the grid and separate the columns and rows.
