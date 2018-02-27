@@ -1,0 +1,22 @@
+{
+  "name": "css-grid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js' --directory --port 3080 "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunitakarle23/css-grid.git"
+  },
+  "author": "sunita sumbe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sunitakarle23/css-grid/issues"
+  },
+  "homepage": "https://github.com/sunitakarle23/css-grid#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13"
+  }
+}

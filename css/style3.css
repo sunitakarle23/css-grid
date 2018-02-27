@@ -1,0 +1,67 @@
+:root {
+	--text-color:  #000;
+	--border-color: #625c5c;
+	--bg-color: #ccc ;
+}
+
+html {
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+.container {
+	display: grid;
+	grid-gap: 15px;
+
+	/* make the grid 10 columns wide other taking twise the free space */
+	grid-template-columns: repeat(5, 1fr 2fr);
+
+	/* make the grid have 10 exlpicit rows each have height 50px */
+	grid-template-rows: repeat(10, 50px);
+
+	/* fit the coloumn auto-fill/auto-fit */
+	/* grid-template-columns: repeat(auto-fill, 200px); */
+}
+
+/* with item 1 start col 2 go until 5 */
+.item-1 {
+	grid-column: 2 / span 5;
+}
+
+/* with item 2 start col 5 go until the end */
+.item-2 {
+	grid-column: 5 / -1;
+}
+
+/* with item 5 double span 2 cols & rows */
+.item-5 {
+	grid-column: span 2;
+	grid-row: span 2;
+}
+
+/* make item 8 two rows heigh */
+.item-8 {
+	grid-row: span 2;
+}
+
+/* make item 15 span the entire grid width */
+.item-15 {
+	grid-column: 1/-1;
+}
+
+/* make item 18 span 4 width but end 9 */
+.item-18 {
+	grid-column: span 4 / 9;
+}
+
+/* make item 20 start row 4 & go for 3 */
+.item-20 {
+	grid-row: span 4 / span 3;
+}
+
+.item {
+	border: 2px solid var(--border-color);
+	text-align: center;
+	background-color: yellow;
+
+}
+

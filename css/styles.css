@@ -1,0 +1,29 @@
+:root {
+	--text-color:  #000;
+	--border-color: #625c5c;
+	--bg-color: #ccc ;
+}
+
+html {
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+.container {
+	display: grid;
+	grid-template-rows: 200px 400px 100px; /* set no of rows & width */
+	grid-template-columns: 200px 500px;   /* set the no of columns & width (Explicit)*/
+	grid-gap: 10px;   /* set row & col gap */
+	grid-auto-rows: 200px;   /* set row which implicitly created */
+	grid-auto-flow: column;   /* set columns/rows which  arranges automatically*/
+	grid-auto-columns: 200px;   /* set cols properties which implicitly created */
+}
+
+p {
+	color: var(--text-color);
+}
+.item {
+	//display: grid;
+	border: 2px solid var(--border-color);
+	text-align: center;
+	background-color: yellow;
+}

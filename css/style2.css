@@ -1,0 +1,28 @@
+:root {
+	--text-color:  #000;
+	--border-color: #625c5c;
+	--bg-color: #ccc ;
+}
+
+html {
+	box-sizing: border-box;
+	color: var(--text-color);
+}
+.container {
+	display: grid;
+	grid-gap: 15px;
+	grid-template-columns: repeat(2, 2fr 1fr);   /* repeat columns */
+}
+
+.item {
+	border: 2px solid var(--border-color);
+	text-align: center;
+	background-color: yellow;
+}
+
+.item-8 {
+	background-color: violet;
+	grid-column: span 2;   /* containing space of 2 column if not found move next line */
+	grid-column: 2/span 2;/* containing space of 2 column starts after 2 col (e.g 1/-1) */
+	grid-row: 1/-1;   /* containing space of 2 rows if not found move next line */
+}
