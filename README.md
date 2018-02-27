@@ -41,9 +41,9 @@
 	
 	when we set any grid coloumn or row width it is called explicit
 		e.g-
-			grid-template-cols: 200px 300px 600px;
+			grid-template-columns: 200px 300px 600px;
 				- when we does not set any grid coloumn or row width it is called implicit
-			grid-template-cols: 200px 300px 600px;1
+			grid-template-columns: 200px 300px 600px;1
 
 			grid-auto-rows:
 				sets the property to row which have implicitly created
