@@ -3,6 +3,31 @@
 <head>
 	<title>Nesting Grid</title>
 </head>
+<style>
+	body {
+		background: linear-gradient(to bottom right, red, yellow);
+	}
+	.albums {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+		grid-gap: 15px;
+	}
+
+	.album {
+		background: rgb(255,255,255,0.28);
+		padding: 15px;
+		box-shadow: 0 0 0 5px rgb(0,0,0,0.2);
+		border-radius: 4px;
+		display: grid;
+		grid-template-columns: 150px 1fr;
+		grid-gap: 10px;
+		align-items: center;
+	}
+	.album img {
+		max-width: 150px;
+		width: 100%;
+	}
+</style>
 <link rel="stylesheet" type="text/css" href="../css/style8.css">
 <body>
 	<div class="albums">
