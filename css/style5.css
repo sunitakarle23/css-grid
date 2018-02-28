@@ -11,7 +11,9 @@ html {
 .container {
 	display: grid;
 	grid-gap: 15px;
-	grid-template-columns: 1fr 3fr 1fr;
+
+	/* naming the grid lines using [] & use as a property value  e.g [content-start] */
+	grid-template-columns: [site-left] 1fr [content-start]3fr [content-end] [site-right] 1fr;
 	grid-template-rows: 1fr 2fr 2fr 2fr 1fr;
 	grid-template-areas:
 		"header header header"
