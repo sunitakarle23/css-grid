@@ -71,6 +71,16 @@
 	e.g -
 		grid-template-column: repeat(auto-fit, 1fr);
 		grid-template-column: repeat(auto-fill, 1fr);
+		
+#grid-column-start:
+	
+	e.g -
+		grid-column-start: span 3;
+		
+#grid-column-end:
+	
+	e.g -
+		grid-column-end: span 5;
 
 #responsive grids:
 	
@@ -84,3 +94,20 @@
 			"header header header"
 			"sidebar content sidebar"
 			"footer footer footer"
+			
+ #grid-auto-flow: dense
+ 
+ 	   arrange the cells in blank spaces
+
+  #Alignment & centering properties
+   
+   	justify-content: space-between / space-around
+    	align-content: space-between / space-around
+    	justify-items: center/ start / end/ flex-start/ flex-end /stretch
+    	align-items: center/ start / end/ flex-start/ flex-end /stretch
+    	align-self: center/ start / end/ flex-start/ flex-end /stretch ;
+    	justify-self: center/ start / end/ flex-start/ flex-end /stretch ;
+
+ #Reordering gird property
+   	
+		order: 1/2/3/.....;
