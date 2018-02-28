@@ -108,6 +108,6 @@
     	align-self: center/ start / end/ flex-start/ flex-end /stretch ;
     	justify-self: center/ start / end/ flex-start/ flex-end /stretch ;
 
- #Reordering gird property
+ #Reordering grid property
    	
 		order: 1/2/3/.....;
